@@ -118,7 +118,8 @@ class Connection(object):
                        merge_vars,
                        email_type='text',
                        status='subscribed',
-                       interests=None):
+                       interests=None,
+                       method="POST"):
         path = 'lists/{}/members'.format(id)
         payload = {
             'email_type': email_type,
